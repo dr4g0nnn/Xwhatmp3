@@ -20,7 +20,10 @@
 @synthesize addButton = _addButton;
 @synthesize removeButton = _removeButton;
 @synthesize directoryTable = _directoryTable;
-@synthesize preferencesController;
+@synthesize torrentDirButton = _torrentDirButton;
+@synthesize dataDirButton = _dataDirButton;
+@synthesize dataDirTextfield = _dataDirTextfield;
+@synthesize torrentDirTextfield = _torrentDirTextfield;
 
 + (void)initialize {
     NSMutableDictionary *initialValues = [NSMutableDictionary dictionary];
@@ -54,7 +57,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-    data = [[NSMutableArray alloc] initWithObjects:@"Hello!", nil];
+    data = [[NSMutableArray alloc] init];
     [[self directoryTable] reloadData];
 }
 
