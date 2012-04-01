@@ -65,9 +65,27 @@
 }
 
 - (IBAction)add:(id)sender {
+    NSOpenPanel *openDialog = [NSOpenPanel openPanel];
+    [openDialog setCanChooseFiles:NO];
+    [openDialog setCanChooseDirectories:YES];
+    [openDialog setAllowsMultipleSelection:YES];
+    [openDialog setResolvesAliases:YES];
+
+    if ([openDialog runModal] == NSOKButton) {
+        [data addObjectsFromArray:[openDialog URLs]];
+        [[self directoryTable] reloadData];
+    }
 }
 
 - (IBAction)remove:(id)sender {
+    NSIndexSet *setRows = [[self directoryTable] selectedRowIndexes];
+    for (int i = [setRows firstIndex]; i <= [setRows lastIndex];i++) {
+        if ( ! [setRows containsIndex:i]) {
+            continue;
+        }
+        [data removeObject:[data objectAtIndex:i]];
+        [[self directoryTable] reloadData];
+    }
 }
 
 - (BOOL)tableView:(NSTableView *)tableView writeRowsWithIndexes:(NSIndexSet *)rowSet toPasteboard:(NSPasteboard*)pboard {
