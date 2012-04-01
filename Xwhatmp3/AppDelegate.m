@@ -15,6 +15,7 @@
 @synthesize addButton = _addButton;
 @synthesize removeButton = _removeButton;
 @synthesize directoryTable = _directoryTable;
+@synthesize preferencesController;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -29,4 +30,12 @@
 
 - (IBAction)remove:(id)sender {
 }
+
+- (IBAction)showPreferences:(id)sender {
+    if (preferencesController == nil) {
+        preferencesController = [[NSWindowController alloc] initWithWindowNibName:@"Preferences"];
+    }
+    [preferencesController showWindow:self];
+}
+
 @end

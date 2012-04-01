@@ -13,6 +13,7 @@
 		4F73726D1528A87200488C46 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4F73726B1528A87200488C46 /* Credits.rtf */; };
 		4F7372701528A87200488C46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F73726F1528A87200488C46 /* AppDelegate.m */; };
 		4F7372731528A87200488C46 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F7372711528A87200488C46 /* MainMenu.xib */; };
+		4F73727F1528B6B000488C46 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F73727D1528B6B000488C46 /* Preferences.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		4F73726E1528A87200488C46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4F73726F1528A87200488C46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4F7372721528A87200488C46 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4F73727D1528B6B000488C46 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				4F73726E1528A87200488C46 /* AppDelegate.h */,
 				4F73726F1528A87200488C46 /* AppDelegate.m */,
 				4F7372711528A87200488C46 /* MainMenu.xib */,
+				4F73727D1528B6B000488C46 /* Preferences.xib */,
 				4F7372631528A87200488C46 /* Supporting Files */,
 			);
 			path = Xwhatmp3;
@@ -155,6 +158,7 @@
 				4F7372671528A87200488C46 /* InfoPlist.strings in Resources */,
 				4F73726D1528A87200488C46 /* Credits.rtf in Resources */,
 				4F7372731528A87200488C46 /* MainMenu.xib in Resources */,
+				4F73727F1528B6B000488C46 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +292,7 @@
 				4F7372781528A87200488C46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
