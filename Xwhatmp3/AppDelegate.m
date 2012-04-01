@@ -182,4 +182,21 @@
     [preferencesController showWindow:self];
 }
 
+- (IBAction)browse:(id)sender {
+    NSOpenPanel *openDialog = [NSOpenPanel openPanel];
+    [openDialog setCanChooseFiles:NO];
+    [openDialog setCanChooseDirectories:YES];
+    [openDialog setAllowsMultipleSelection:NO];
+    [openDialog setResolvesAliases:YES];
+    [openDialog setCanCreateDirectories:YES];
+
+    if ([openDialog runModal] == NSOKButton) {
+        NSURL *dir = [[openDialog URLs] objectAtIndex:0];
+        if ([[sender alternateTitle] isEqualToString: @"dataButton"])
+            [[self dataDirTextfield] setStringValue:[dir path]];
+        else
+            [[self torrentDirTextfield] setStringValue:[dir path]];
+    }
+}
+
 @end
