@@ -10,6 +10,9 @@
 
 #define PRIVATE_DATA_TYPE @"privateDataType"
 
+#define NYES ([NSNumber numberWithBool:YES])
+#define NNO ([NSNumber numberWithBool:NO])
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -17,6 +20,32 @@
 @synthesize addButton = _addButton;
 @synthesize removeButton = _removeButton;
 @synthesize directoryTable = _directoryTable;
+@synthesize preferencesController;
+
++ (void)initialize {
+    NSMutableDictionary *initialValues = [NSMutableDictionary dictionary];
+
+    [initialValues setObject:NYES forKey:@"convert320"];
+    [initialValues setObject:NYES forKey:@"convertV0"];
+    [initialValues setObject:NYES forKey:@"convertV2"];
+    [initialValues setObject:NYES forKey:@"convertQ8"];
+    [initialValues setObject:NNO forKey:@"convertAlac"];
+    [initialValues setObject:NNO forKey:@"convertAac"];
+    [initialValues setObject:NNO forKey:@"convertFlac"];
+    [initialValues setObject:NNO forKey:@"createFlacTorrent"];
+    [initialValues setObject:NYES forKey:@"createTorrents"];
+    [initialValues setObject:NNO forKey:@"dither"];
+    [initialValues setObject:NNO forKey:@"replayGain"];
+    [initialValues setObject:NYES forKey:@"zeropad"];
+    [initialValues setObject:NYES forKey:@"moveLog"];
+    [initialValues setObject:NYES forKey:@"moveCue"];
+    [initialValues setObject:NYES forKey:@"moveOther"];
+    [initialValues setObject:@"http://tracker.what.cd:34000/" forKey:@"tracker"];
+    [initialValues setObject:@"" forKey:@"passkey"];
+    [initialValues setObject:[NSNumber numberWithInt:1] forKey:@"threads"];
+
+    [[NSUserDefaultsController sharedUserDefaultsController] setInitialValues:initialValues];
+}
 
 - (void)awakeFromNib {
     [[self directoryTable] registerForDraggedTypes:[NSArray arrayWithObjects:PRIVATE_DATA_TYPE, NSFilenamesPboardType, nil]];
@@ -123,6 +152,13 @@
 
 - (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)column row:(NSInteger)row {
     return [data objectAtIndex:row];
+}
+
+- (IBAction)showPreferences:(id)sender {
+    if (preferencesController == nil) {
+        preferencesController = [[NSWindowController alloc] initWithWindowNibName:@"Preferences"];
+    }
+    [preferencesController showWindow:self];
 }
 
 @end

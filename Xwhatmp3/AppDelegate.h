@@ -10,6 +10,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate,NSTableViewDelegate,NSTableViewDataSource> {
     NSMutableArray *data;
+    NSWindowController *preferencesController;
 }
 
 @property (assign) IBOutlet NSWindow *window;
@@ -17,9 +18,11 @@
 @property (weak) IBOutlet NSButton *addButton;
 @property (weak) IBOutlet NSButton *removeButton;
 @property (weak) IBOutlet NSTableView *directoryTable;
+@property (nonatomic, retain) NSWindowController *preferencesController;
 
 - (IBAction)convert:(id)sender;
 - (IBAction)add:(id)sender;
 - (IBAction)remove:(id)sender;
+- (IBAction)showPreferences:(id)sender;
 
 @end
