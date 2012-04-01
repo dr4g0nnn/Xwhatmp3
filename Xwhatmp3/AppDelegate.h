@@ -8,7 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate,NSTableViewDelegate,NSTableViewDataSource> {
+    NSMutableArray *data;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSButton *convertButton;
