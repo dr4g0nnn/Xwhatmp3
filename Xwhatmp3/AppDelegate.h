@@ -11,5 +11,13 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSButton *convertButton;
+@property (weak) IBOutlet NSButton *addButton;
+@property (weak) IBOutlet NSButton *removeButton;
+@property (weak) IBOutlet NSTableView *directoryTable;
+
+- (IBAction)convert:(id)sender;
+- (IBAction)add:(id)sender;
+- (IBAction)remove:(id)sender;
 
 @end

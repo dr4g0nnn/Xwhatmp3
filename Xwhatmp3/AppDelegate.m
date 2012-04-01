@@ -11,10 +11,22 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize convertButton = _convertButton;
+@synthesize addButton = _addButton;
+@synthesize removeButton = _removeButton;
+@synthesize directoryTable = _directoryTable;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
 }
 
+- (IBAction)convert:(id)sender {
+}
+
+- (IBAction)add:(id)sender {
+}
+
+- (IBAction)remove:(id)sender {
+}
 @end
