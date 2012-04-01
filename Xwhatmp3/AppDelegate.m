@@ -23,21 +23,21 @@
 + (void)initialize {
     NSMutableDictionary *initialValues = [NSMutableDictionary dictionary];
 
-    [initialValues setObject:[NSNumber numberWithBool:YES] forKey:@"convert320"];
-    [initialValues setObject:[NSNumber numberWithBool:YES] forKey:@"convertV0"];
-    [initialValues setObject:[NSNumber numberWithBool:YES] forKey:@"convertV2"];
-    [initialValues setObject:[NSNumber numberWithBool:YES] forKey:@"convertQ8"];
-    [initialValues setObject:[NSNumber numberWithBool:NO] forKey:@"convertAlac"];
-    [initialValues setObject:[NSNumber numberWithBool:NO] forKey:@"convertAac"];
-    [initialValues setObject:[NSNumber numberWithBool:NO] forKey:@"convertFlac"];
-    [initialValues setObject:[NSNumber numberWithBool:NO] forKey:@"createFlacTorrent"];
-    [initialValues setObject:[NSNumber numberWithBool:YES] forKey:@"createTorrents"];
-    [initialValues setObject:[NSNumber numberWithBool:NO] forKey:@"dither"];
-    [initialValues setObject:[NSNumber numberWithBool:NO] forKey:@"replayGain"];
-    [initialValues setObject:[NSNumber numberWithBool:YES] forKey:@"zeropad"];
-    [initialValues setObject:[NSNumber numberWithBool:YES] forKey:@"moveLog"];
-    [initialValues setObject:[NSNumber numberWithBool:YES] forKey:@"moveCue"];
-    [initialValues setObject:[NSNumber numberWithBool:YES] forKey:@"moveOther"];
+    [initialValues setObject:NYES forKey:@"convert320"];
+    [initialValues setObject:NYES forKey:@"convertV0"];
+    [initialValues setObject:NYES forKey:@"convertV2"];
+    [initialValues setObject:NYES forKey:@"convertQ8"];
+    [initialValues setObject:NNO forKey:@"convertAlac"];
+    [initialValues setObject:NNO forKey:@"convertAac"];
+    [initialValues setObject:NNO forKey:@"convertFlac"];
+    [initialValues setObject:NNO forKey:@"createFlacTorrent"];
+    [initialValues setObject:NYES forKey:@"createTorrents"];
+    [initialValues setObject:NNO forKey:@"dither"];
+    [initialValues setObject:NNO forKey:@"replayGain"];
+    [initialValues setObject:NYES forKey:@"zeropad"];
+    [initialValues setObject:NYES forKey:@"moveLog"];
+    [initialValues setObject:NYES forKey:@"moveCue"];
+    [initialValues setObject:NYES forKey:@"moveOther"];
     [initialValues setObject:@"http://tracker.what.cd:34000/" forKey:@"tracker"];
     [initialValues setObject:@"" forKey:@"passkey"];
     [initialValues setObject:[NSNumber numberWithInt:1] forKey:@"threads"];
