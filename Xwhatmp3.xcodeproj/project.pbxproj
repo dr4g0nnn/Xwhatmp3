@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F73725D1528A87200488C46 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F73725C1528A87200488C46 /* Cocoa.framework */; };
+		4F7372671528A87200488C46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F7372651528A87200488C46 /* InfoPlist.strings */; };
+		4F7372691528A87200488C46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7372681528A87200488C46 /* main.m */; };
+		4F73726D1528A87200488C46 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4F73726B1528A87200488C46 /* Credits.rtf */; };
+		4F7372701528A87200488C46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F73726F1528A87200488C46 /* AppDelegate.m */; };
+		4F7372731528A87200488C46 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F7372711528A87200488C46 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F7372581528A87200488C46 /* Xwhatmp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xwhatmp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F73725C1528A87200488C46 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4F73725F1528A87200488C46 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4F7372601528A87200488C46 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4F7372611528A87200488C46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F7372641528A87200488C46 /* Xwhatmp3-Info.plist */ = {isa = PBXFileReference; path = "Xwhatmp3-Info.plist"; sourceTree = "<group>"; };
+		4F7372661528A87200488C46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4F7372681528A87200488C46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F73726A1528A87200488C46 /* Xwhatmp3-Prefix.pch */ = {isa = PBXFileReference; path = "Xwhatmp3-Prefix.pch"; sourceTree = "<group>"; };
+		4F73726C1528A87200488C46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4F73726E1528A87200488C46 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		4F73726F1528A87200488C46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4F7372721528A87200488C46 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F7372551528A87200488C46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F73725D1528A87200488C46 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F73724D1528A87200488C46 = {
+			isa = PBXGroup;
+			children = (
+				4F7372621528A87200488C46 /* Xwhatmp3 */,
+				4F73725B1528A87200488C46 /* Frameworks */,
+				4F7372591528A87200488C46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F7372591528A87200488C46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F7372581528A87200488C46 /* Xwhatmp3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F73725B1528A87200488C46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F73725C1528A87200488C46 /* Cocoa.framework */,
+				4F73725E1528A87200488C46 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F73725E1528A87200488C46 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F73725F1528A87200488C46 /* AppKit.framework */,
+				4F7372601528A87200488C46 /* CoreData.framework */,
+				4F7372611528A87200488C46 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4F7372621528A87200488C46 /* Xwhatmp3 */ = {
+			isa = PBXGroup;
+			children = (
+				4F73726E1528A87200488C46 /* AppDelegate.h */,
+				4F73726F1528A87200488C46 /* AppDelegate.m */,
+				4F7372711528A87200488C46 /* MainMenu.xib */,
+				4F7372631528A87200488C46 /* Supporting Files */,
+			);
+			path = Xwhatmp3;
+			sourceTree = "<group>";
+		};
+		4F7372631528A87200488C46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F7372641528A87200488C46 /* Xwhatmp3-Info.plist */,
+				4F7372651528A87200488C46 /* InfoPlist.strings */,
+				4F7372681528A87200488C46 /* main.m */,
+				4F73726A1528A87200488C46 /* Xwhatmp3-Prefix.pch */,
+				4F73726B1528A87200488C46 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F7372571528A87200488C46 /* Xwhatmp3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7372761528A87200488C46 /* Build configuration list for PBXNativeTarget "Xwhatmp3" */;
+			buildPhases = (
+				4F7372541528A87200488C46 /* Sources */,
+				4F7372551528A87200488C46 /* Frameworks */,
+				4F7372561528A87200488C46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Xwhatmp3;
+			productName = Xwhatmp3;
+			productReference = 4F7372581528A87200488C46 /* Xwhatmp3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F73724F1528A87200488C46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 4F7372521528A87200488C46 /* Build configuration list for PBXProject "Xwhatmp3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4F73724D1528A87200488C46;
+			productRefGroup = 4F7372591528A87200488C46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F7372571528A87200488C46 /* Xwhatmp3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F7372561528A87200488C46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7372671528A87200488C46 /* InfoPlist.strings in Resources */,
+				4F73726D1528A87200488C46 /* Credits.rtf in Resources */,
+				4F7372731528A87200488C46 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F7372541528A87200488C46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7372691528A87200488C46 /* main.m in Sources */,
+				4F7372701528A87200488C46 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4F7372651528A87200488C46 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F7372661528A87200488C46 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4F73726B1528A87200488C46 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F73726C1528A87200488C46 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4F7372711528A87200488C46 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F7372721528A87200488C46 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F7372741528A87200488C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4F7372751528A87200488C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4F7372771528A87200488C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Xwhatmp3/Xwhatmp3-Prefix.pch";
+				INFOPLIST_FILE = "Xwhatmp3/Xwhatmp3-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4F7372781528A87200488C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Xwhatmp3/Xwhatmp3-Prefix.pch";
+				INFOPLIST_FILE = "Xwhatmp3/Xwhatmp3-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F7372521528A87200488C46 /* Build configuration list for PBXProject "Xwhatmp3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7372741528A87200488C46 /* Debug */,
+				4F7372751528A87200488C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F7372761528A87200488C46 /* Build configuration list for PBXNativeTarget "Xwhatmp3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7372771528A87200488C46 /* Debug */,
+				4F7372781528A87200488C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F73724F1528A87200488C46 /* Project object */;
+}
