@@ -62,6 +62,8 @@
 }
 
 - (IBAction)convert:(id)sender {
+    TaskWrapper *task = [[TaskWrapper alloc] initWithController:self launchPath:@"foo" arguments:[[NSArray alloc] initWithObjects:@"bar", @"baz", nil]];
+    [task startProcess];
 }
 
 - (IBAction)add:(id)sender {
@@ -197,6 +199,22 @@
         else
             [[self torrentDirTextfield] setStringValue:[dir path]];
     }
+}
+
+- (void)appendOutput:(NSString *)output {
+    
+}
+
+- (void)scrollToVisible:(id)ignore {
+    //[resultsTextField scrollRangeToVisible:NSMakeRange([[resultsTextField string] length], 0)];
+}
+
+- (void)processStarted {
+    
+}
+
+- (void)processFinished {
+    
 }
 
 @end
